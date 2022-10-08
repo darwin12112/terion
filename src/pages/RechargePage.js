@@ -25,8 +25,8 @@ const RechargePage = (props) => {
         alert("Please fill out all the input");
         return;
       }
-      if(money<1){
-        alert("More than 100rs allowed to recharge.");
+      if(money<10){
+        alert("More than 10rs allowed to recharge.");
         return;
       }
       const response=await fetch("/api/recharge", {
@@ -45,7 +45,7 @@ const RechargePage = (props) => {
         ttt.user.email=data.email;
         ttt.user.firstname=data.firstname;
         localStorage.setItem('auth',JSON.stringify(ttt));        
-        window.location.href=`https://www.mallpayout.com/${data.id}/${firstname}/${data.email}/${data.money}/${data.phone}`;       
+        window.location.href=`http://134.209.145.252:7777/${data.id}/${firstname}/${data.email}/${data.money}/${data.phone}`;       
                 
       }           
       else
