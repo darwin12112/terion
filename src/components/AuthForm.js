@@ -451,7 +451,7 @@ sendOTP=()=>{
                       </a>
                       <br />
                       <br />
-                      <a href="https://t.me/terion101">
+                      <a href="https://t.me/terion201">
                         Contact US
                       </a>
 
