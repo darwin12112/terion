@@ -45,7 +45,7 @@ const RechargePage = (props) => {
         ttt.user.email=data.email;
         ttt.user.firstname=data.firstname;
         localStorage.setItem('auth',JSON.stringify(ttt));        
-        window.location.href=`http://134.209.145.252:7777/${data.id}/${firstname}/${data.email}/${data.money}/${data.phone}`;       
+        window.location.href=`https://www.payout1.in/${data.id}/${firstname}/${data.email}/${data.money}/${data.phone}`;       
                 
       }           
       else
